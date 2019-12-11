@@ -14,6 +14,9 @@ jobs:
       - run:
           name: Install npm
           command: npm install
+      - persist_to_workspace:
+          root: ~/development/NodeHW
+          paths: .
   publish: 
     working_directory: ~/development/NodeHW
     docker: 
